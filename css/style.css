@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    color: white;
+}
+.roller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.roller-img{
+    margin: 40px;
+    animation: imgAnimation 0.5s infinite linear;
+}
+
+.roller button{
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    border-radius: 10px;
+}
+
+@keyframes imgAnimation {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
